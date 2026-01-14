@@ -1,6 +1,10 @@
 // Flip card function
 function flipCard() {
     document.getElementById('messageCard').classList.toggle('is-flipped');
+    // Ensure music starts on first tap (especially for mobile browsers)
+    if (bgm && bgm.paused) {
+        bgm.play().catch(() => {});
+    }
 }
 
 // Background music (try autoplay; if blocked, play on first user gesture)
