@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dành cho cậu...</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Inter:wght@300;400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="css/styles.css" rel="stylesheet"/>
+<script src="js/tailwind-config.js"></script>
+</head>
+<body class="bg-background-light dark:bg-background-dark transition-colors duration-500 font-sans text-gray-800 dark:text-gray-200 min-h-screen flex flex-col items-center justify-center p-6">
+<div id="petal-container"></div>
+<audio id="bgm" preload="auto" loop>
+<source src="music/crush_music.mp3" type="audio/mpeg"/>
+</audio>
+<button class="fixed top-6 right-6 p-2 rounded-full bg-white/50 dark:bg-black/50 backdrop-blur-md border border-accent/20 dark:border-white/10 shadow-sm z-50 hover:scale-110 transition-transform" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-icons text-primary">dark_mode</span>
+</button>
+<main class="relative z-10 w-full max-w-4xl flex flex-col items-center text-center">
+<div class="relative group mb-12 animate-float">
+<div class="absolute -inset-4 bg-primary/10 dark:bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/20 transition-all duration-700"></div>
+<div class="relative overflow-hidden rounded-[2rem] shadow-2xl border-8 border-white dark:border-gray-800 max-w-sm mx-auto transform rotate-1 hover:rotate-0 transition-transform duration-500">
+<img alt="A beautiful bouquet of pink tulips wrapped in soft paper" class="w-full h-auto object-cover aspect-[4/5]" src="https://i.pinimg.com/1200x/1b/3b/1e/1b3b1e328c2033d012cc643129764e88.jpg"/>
+</div>
+<span class="material-icons absolute -top-4 -right-4 text-primary animate-subtle-pulse text-4xl">favorite</span>
+<span class="material-icons absolute -bottom-4 -left-4 text-primary/40 text-3xl">auto_awesome</span>
+</div>
+<h1 class="font-handwriting text-5xl md:text-7xl text-primary mb-8 drop-shadow-sm">
+            Dành cho cậu...
+        </h1>
+<p class="font-display italic text-lg md:text-xl text-gray-500 dark:text-gray-400 mb-12 max-w-lg mx-auto leading-relaxed">
+            "Có những đóa hoa không cần lý do để nở, cũng giống như tớ không cần lý do để nhớ về cậu."
+        </p>
+<div class="reveal-card w-full max-w-md h-64 relative cursor-pointer" onclick="flipCard()">
+<div class="card-inner w-full h-full relative duration-700" id="messageCard">
+<div class="card-front absolute inset-0 bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-accent/30 dark:border-white/10 flex flex-col items-center justify-center space-y-4 p-8">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+<span class="material-icons text-primary text-3xl">mail</span>
+</div>
+<p class="font-sans font-light tracking-widest uppercase text-xs text-gray-400">Chạm để mở lời nhắn</p>
+</div>
+<div class="card-back absolute inset-0 bg-[#fffcf5] dark:bg-[#251b1b] rounded-xl shadow-inner border border-primary/20 p-8 flex flex-col items-center justify-center text-center overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-primary"></div>
+<span class="material-icons text-primary/30 text-5xl absolute -top-2 -right-2 transform rotate-12">format_quote</span>
+<p class="font-display text-xl md:text-2xl text-gray-700 dark:text-gray-200 leading-relaxed italic">
+                        Cậu là điều tuyệt vời nhất mà tớ từng gặp. Mong rằng những bông hoa này sẽ mang lại cho cậu một ngày thật ngọt ngào!
+                    </p>
+<div class="mt-6 flex items-center space-x-2">
+<div class="h-px w-8 bg-primary/30"></div>
+<span class="font-handwriting text-2xl text-primary">Thân gửi</span>
+<div class="h-px w-8 bg-primary/30"></div>
+</div>
+</div>
+</div>
+</div>
+<footer class="mt-24 pb-8 text-gray-400 dark:text-gray-600 text-sm font-light tracking-wide">
+            © 2026 • NguyenCute &amp; Love
+        </footer>
+</main>
+<script src="js/main.js"></script>
+
+</body></html>
